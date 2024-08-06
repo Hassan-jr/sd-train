@@ -12,7 +12,7 @@ RUN python3.11 -m pip install --upgrade pip && \
 
 # Add download script and run it to download the model
 COPY download_model.sh /download_model.sh
-RUN /download_model.sh && rm /download_model.sh
+RUN chmod +x /download_model.sh && /download_model.sh && rm /download_model.sh
 
 # Cache Models
 COPY builder/cache_models.py /cache_models.py
