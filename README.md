@@ -9,7 +9,7 @@
 🚀 | RunPod implementation of SDXL for serverless deployment.
 </div>
 
-## 📖 | Getting Started Test 1
+## 📖 | Getting Started | v3
 
 1. Clone this repository.
 2. (Optional) Add DockerHub credentials to GitHub Secrets.
