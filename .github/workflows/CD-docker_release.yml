@@ -6,7 +6,7 @@ on:
 
 jobs:
   docker:
-    runs-on: DO
+    runs-on: ubuntu-latest
     steps:
       - name: Clear Space
         run: |
