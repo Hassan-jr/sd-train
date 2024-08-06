@@ -10,6 +10,10 @@ RUN python3.11 -m pip install --upgrade pip && \
     python3.11 -m pip install --upgrade -r /requirements.txt --no-cache-dir && \
     rm /requirements.txt
 
+# Add download script and run it to download the model
+COPY download_model.sh /download_model.sh
+RUN /download_model.sh && rm /download_model.sh
+
 # Cache Models
 COPY builder/cache_models.py /cache_models.py
 RUN python3.11 /cache_models.py && \
